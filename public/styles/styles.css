@@ -906,6 +906,8 @@ body {
     .footer__box .footer__item-desc, .footer__box .footer__item-design, .footer__box .footer__item-mail, .footer__box .footer__item-phone {
       display: block;
       font-size: 1.6rem; }
+    .footer__box .footer__item-mail {
+      margin-bottom: 1rem; }
     .footer__box:last-child {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -962,6 +964,8 @@ body {
         flex-direction: row;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
+    .footer__item-design {
+      margin-bottom: 1rem; }
     .footer__list:first-child {
       margin-left: 0 !important; }
     .footer__list:nth-child(2) {

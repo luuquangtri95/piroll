@@ -29,6 +29,9 @@
         display: block;
         font-size: 1.6rem;
       }
+      &-mail{
+        margin-bottom: 1rem;
+      }
     }
     &:last-child {
       @include flexboxUpdate(
@@ -72,6 +75,11 @@
             justify-content: space-between,
           )
         );
+      }
+    }
+    &__item{
+      &-design{
+        margin-bottom: 1rem;
       }
     }
     &__list {
