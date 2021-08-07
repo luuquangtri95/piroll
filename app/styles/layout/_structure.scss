@@ -1,0 +1,41 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: $font-family;
+  line-height: $line-height-1;
+  font-size: 1.2rem;
+}
+
+.block {
+  &__content {
+    width: 60rem;
+    margin: 0 auto;
+    @include flexboxUpdate(
+      (
+        align-items: center,
+        justify-content: center,
+        flex-direction: column,
+      )
+    );
+    &-heading {
+      font-weight: bold;
+    }
+    &-desc {
+      font-size: 1.6rem;
+      line-height: $line-height-4;
+      color: $desc-color;
+      text-align: center;
+      @include textClamp(3);
+    }
+  }
+  @include maxWidth(767px){
+    &__content{
+      max-width: 100%;
+    }
+  }
+}

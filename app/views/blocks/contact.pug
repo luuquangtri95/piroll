@@ -1,0 +1,19 @@
+section.contact.pt-10
+  .container
+    .contact__inner
+      +blockContent({
+        title:"Need a Project?",
+        desc:"Lorem Ipsum is simply dummy text of the printing and typesetting inrinter took a galley of type and scrambled it to make a ty "
+      })
+    .form.contact__form
+      .form__inline
+        .form__group
+          input(placeholder="Your Name" type="text").form__control
+        .form__group
+          input(placeholder="Your Name" type="email").form__control
+      .form__title
+        input(placeholder="Your Title" type="text").form__control
+      .form__area
+        textarea(placeholder="Your Comment").form__control
+      .form__btn
+        input(type="submit" value="send message").btn.btn--primary.mt-3.mb-10

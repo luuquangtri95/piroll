@@ -1,0 +1,6 @@
+mixin blockContent(data)
+  .block__content
+    h2.block__content-heading.fz-3= data.title
+    p.block__content-desc.mt-4.mb-4= data.desc
+    if data.img
+      img.block__content-image(src= data.img)

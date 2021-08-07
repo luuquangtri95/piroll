@@ -1,0 +1,73 @@
+.skill {
+  height: 57rem;
+  @include flexboxUpdate(
+    (
+      align-items: stretch,
+      justify-content: flex-start,
+    )
+  );
+  &__box {
+    padding: 16.5rem 8.5rem 16.5rem 8.5rem;
+    &-heading {
+      font-weight: bold;
+    }
+    &-item {
+      h3 {
+        font-weight: bold;
+      }
+    }
+  }
+  &__item {
+    width: 50%;
+    background-color: $bg-color-section;
+    &:last-child {
+      img {
+        height: 57rem;
+        object-fit: cover;
+      }
+    }
+  }
+  &__process {
+    border-bottom: 3px solid #d8d8d8;
+    &--75 {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 75%;
+        background-color: $hover;
+        height: 3px;
+      }
+    }
+    &--90 {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 90%;
+        background-color: $hover;
+        height: 3px;
+      }
+    }
+    &--65 {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 65%;
+        background-color: $hover;
+        height: 3px;
+      }
+    }
+  }
+  @include maxWidth(767px) {
+    flex-direction: column;
+    height: auto;
+    &__item {
+      width: 100%;
+    }
+    &__box{
+      padding: 5rem 2rem;
+    }
+  }
+}

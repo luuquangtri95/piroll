@@ -1,0 +1,39 @@
+.form {
+  &__inline {
+    @include flexboxUpdate(
+      (
+        align-items: center,
+        justify-content: space-between,
+      )
+    );
+  }
+  &__control {
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+  }
+  &__group {
+    width: calc(50% - 1.5rem);
+    margin-bottom: 3rem;
+  }
+  &__title {
+    margin-bottom: 3rem;
+  }
+  &__area {
+    textarea {
+      height: 17rem;
+    }
+  }
+  &__btn {
+    text-align: center;
+  }
+  @include maxWidth(767px) {
+    &__inline {
+      flex-wrap: wrap;
+    }
+    &__group {
+      width: 100%;
+    }
+  }
+}

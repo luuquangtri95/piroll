@@ -1,0 +1,15 @@
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 2.5rem 4.5rem;
+  font-weight: bold;
+  display: inline-block;
+  &--primary {
+    background-color: $hover;
+    color: white;
+  }
+  &--gray {
+    background-color: #f5f5f5;
+  }
+}

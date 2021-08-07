@@ -1,0 +1,32 @@
+.work {
+  &__video {
+    text-align: center;
+    position: relative;
+    img {
+      display: inline-block;
+      height: 57rem;
+      object-fit: cover;
+    }
+    &-icon {
+      @include absoluteCenter('both');
+      color: white;
+      padding: 3rem;
+      background-color: $hover;
+      border-radius: 100rem;
+      cursor: pointer;
+    }
+  }
+  @include maxWidth(767px){
+    &__inner{
+      padding-top: 5rem;
+    }
+    &__video {
+      img{
+        height: auto;
+      }
+      &-icon{
+        padding: 1.5rem;
+      }
+    }
+  }
+}

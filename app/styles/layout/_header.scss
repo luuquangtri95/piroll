@@ -1,0 +1,60 @@
+.header {
+  position: relative;
+  z-index: 1;
+  &__toggle {
+    &-menu {
+      font-size: 2rem;
+    }
+  }
+  &__menu {
+    padding-top: 4rem;
+    @include flexboxUpdate(
+      (
+        align-items: center,
+        justify-content: space-between,
+      )
+    );
+    &-logo {
+    }
+    .logo__iamge {
+    }
+    &-list {
+      @include flexboxUpdate(
+        (
+          align-items: center,
+          justify-content: space-between,
+        )
+      );
+    }
+    .list__item {
+      &:not(:first-child) {
+        margin-left: 3rem;
+      }
+      &-link {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $black;
+        transition: all 0.1s linear;
+        &:hover {
+          color: $hover;
+        }
+      }
+    }
+  }
+  @include minWidth(768px) {
+    &__toggle {
+      &-menu {
+        font-size: 2rem;
+        display: none;
+      }
+    }
+  }
+  @include maxWidth(767px) {
+    &__menu {
+      &-list {
+        display: none;
+      }
+    }
+  }
+}

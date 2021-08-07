@@ -1,0 +1,12 @@
+.contact {
+  background-color: #f5f5f5;
+  &__form {
+    width: 67rem;
+    margin: 0 auto;
+  }
+  @include maxWidth(767px) {
+    &__form {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.project {
+  background-color: $hover;
+  &__list {
+    margin-left: -7rem;
+    @include flexboxUpdate(
+      (
+        align-items: center,
+        justify-content: flex-start,
+      )
+    );
+    &-item {
+      width: calc(25% - 7rem);
+      margin-left: 7rem;
+      @include flexboxUpdate(
+        (
+          align-items: center,
+        )
+      );
+    }
+    &-icon {
+      margin-right: 3rem;
+    }
+  }
+  &__content {
+    &-number {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+    &-title {
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+  @include maxWidth(767px) {
+    padding: 5rem 0;
+
+    &__list {
+      margin-left: 0;
+      flex-direction: column;
+      flex-wrap: wrap;
+      &-item {
+        width: 50%;
+        margin-left: 0;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+      &-icon {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+    &__content {
+      text-align: center;
+    }
+  }
+}

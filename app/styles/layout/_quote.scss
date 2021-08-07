@@ -1,0 +1,32 @@
+.quote {
+  background-color: $hover;
+  &__content {
+    width: 81.5rem;
+    margin: 0 auto;
+    text-align: center;
+    &-title {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: white;
+      line-height: $line-height-4;
+    }
+    &-author{
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: white;
+    }
+  }
+  @include maxWidth(767px){
+    padding-top: 5rem;
+    &__content{
+      width: 100%;
+      padding-bottom: 5rem;
+      &-title{
+        font-size: 1.5rem;
+      }
+      &-author{
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

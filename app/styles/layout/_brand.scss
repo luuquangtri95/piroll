@@ -1,0 +1,26 @@
+.brand {
+  &__list {
+    padding: 7rem 4rem;
+
+    @include flexboxUpdate(
+      (
+        align-items: center,
+        justify-content: flex-start,
+      )
+    );
+    &-item {
+      width: calc(20% - 15rem);
+      margin-left: 15rem;
+    }
+  }
+  @include maxWidth(767px) {
+    &__list {
+      margin-left: 0;
+      @include touchSlider;
+      &-item {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+}

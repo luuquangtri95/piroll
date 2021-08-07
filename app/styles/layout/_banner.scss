@@ -1,0 +1,23 @@
+.slider {
+  margin-top: -7rem;
+  height: 67rem;
+  background: url('https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1574&q=80')
+    no-repeat center / cover;
+  &__content {
+    padding: 20rem 0;
+    width: 50rem;
+    &-heading {
+      font-weight: bold;
+    }
+    &-desc {
+      @include textClamp(3);
+      line-height: $line-height-4;
+      color: $desc-color;
+    }
+  }
+  @include maxWidth(767px){
+    &__content{
+      width: 100%;
+    }
+  }
+}
