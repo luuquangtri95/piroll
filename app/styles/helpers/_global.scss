@@ -60,7 +60,11 @@
 .hamburger.is-active .bar {
   opacity: 0;
 }
-
+.slick-slide {
+  img {
+    margin: 0 auto;
+  }
+}
 .slick-dots {
   display: flex;
   justify-content: center;

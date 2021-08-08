@@ -16,10 +16,10 @@
   @include maxWidth(767px) {
     &__list {
       margin-left: 0;
-      @include touchSlider;
+      // @include touchSlider;
       &-item {
         width: 100%;
-        margin-left: 0;
+        margin: 0 auto;
       }
     }
   }

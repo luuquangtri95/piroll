@@ -9,7 +9,7 @@
         justify-content: flex-start,
       )
     );
-    &:first-child {
+    > * {
       margin-bottom: 5.5rem;
     }
     &-item {
@@ -36,7 +36,8 @@
     }
   }
   @include maxWidth(767px) {
-    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 0;
     &__menu {
       margin-left: 0;
       flex-wrap: nowrap;

@@ -7,15 +7,9 @@ header.header
       button.header__toggle-menu.hamburger
         span.bar
       ul.header__menu-list
-        li.list__item
-          a(href="#" class="list__item-link") Home
-        li.list__item
-          a(href="#" class="list__item-link") Pages
-        li.list__item
-          a(href="#" class="list__item-link") Product
-        li.list__item
-          a(href="#" class="list__item-link") Blog
-        li.list__item
-          a(href="#" class="list__item-link") Shop
-        li.list__item
-          a(href="#" class="list__item-link") Contact Us
+        +blockMenuItem({name: "Home"})
+        +blockMenuItem({name: "Pages"})
+        +blockMenuItem({name: "Product"})
+        +blockMenuItem({name: "Blog"})
+        +blockMenuItem({name: "Shop"})
+        +blockMenuItem({name: "Contact Us"})
