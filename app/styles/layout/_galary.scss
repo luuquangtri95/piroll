@@ -1,5 +1,6 @@
 .galary {
   &__list {
+    overflow: auto;
     @include flexboxUpdate(
       (
         align-items: stretch,
@@ -8,6 +9,11 @@
     );
     &-item {
       width: 25%;
+    }
+    &-image {
+      object-fit: cover;
+      width: 100%;
+      height: 30rem;
     }
   }
   &__btn {
@@ -19,6 +25,9 @@
     &__list {
       &-item {
         width: 50%;
+      }
+      &-image {
+        height: 15rem;
       }
     }
   }

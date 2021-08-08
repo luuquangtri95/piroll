@@ -748,6 +748,7 @@ body {
         text-align: center; } }
 
 .galary__list {
+  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,6 +766,11 @@ body {
   flex-wrap: wrap; }
   .galary__list-item {
     width: 25%; }
+  .galary__list-image {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 30rem; }
 
 .galary__btn {
   text-transform: uppercase;
@@ -773,7 +779,9 @@ body {
 
 @media screen and (max-width: 767px) {
   .galary__list-item {
-    width: 50%; } }
+    width: 50%; }
+  .galary__list-image {
+    height: 15rem; } }
 
 .work__video {
   text-align: center;
