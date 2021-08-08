@@ -59,6 +59,41 @@
       }
     }
   }
+  @include maxWidth(1023px){
+    &__inner {
+      padding: 5rem 0;
+      flex-direction: column;
+    }
+    &__box {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 3rem;
+      &:last-child {
+        @include flexboxUpdate(
+          (
+            align-items: stretch,
+            justify-content: space-between,
+          )
+        );
+      }
+    }
+    &__item{
+      &-design{
+        margin-bottom: 1rem;
+      }
+    }
+    &__list {
+      &:first-child {
+        margin-left: 0 !important;
+      }
+      &:nth-child(2) {
+        margin-left: 0 !important;
+      }
+      &:last-child {
+        margin-left: 0 !important;
+      }
+    }
+  }
   @include maxWidth(767px) {
     &__inner {
       padding: 5rem 0;
