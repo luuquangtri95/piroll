@@ -8,3 +8,89 @@
   padding: 0 15px;
   margin: 0 auto;
 }
+.hamburger {
+  position: relative;
+  display: block;
+  width: 3rem;
+
+  // height: 35px;
+  cursor: pointer;
+  z-index: 1;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar {
+  content: '';
+  width: 50%;
+  display: block;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.hamburger::after {
+  content: '';
+  width: 75%;
+  display: block;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.hamburger::before {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+.hamburger.is-active::after {
+  width: 100%;
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem 0;
+
+  list-style-type: none;
+  padding-bottom: 6rem;
+
+  li {
+    margin: 0 0.25rem;
+  }
+
+  button {
+    display: block;
+    width: 6px;
+    height: 6px;
+    padding: 0;
+
+    border: none;
+    border-radius: 100%;
+    background-color: #b0e8e7;
+
+    text-indent: -9999px;
+  }
+
+  li.slick-active button {
+    background-color: #fffffd;
+    width: 1rem;
+    height: 1rem;
+  }
+}
