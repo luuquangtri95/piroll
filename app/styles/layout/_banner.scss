@@ -15,8 +15,10 @@
       color: $desc-color;
     }
   }
-  @include maxWidth(767px){
-    &__content{
+  @include maxWidth(767px) {
+    height: auto;
+    &__content {
+      padding-bottom: 10rem;
       width: 100%;
     }
   }

@@ -61,6 +61,9 @@ const menuList = document.querySelector('.header__menu-list');
 const classExpand = 'is-active';
 
 toggleMenu.addEventListener('click', function () {
-  toggleMenu.classList.add(classExpand);
-  menuList.classList.add(classExpand);
+  toggleMenu.classList.toggle(classExpand);
+  menuList.classList.toggle(classExpand);
 });
+// window.addEventListener('click', function (e) {
+//   menuList.classList.remove(classExpand);
+// });
