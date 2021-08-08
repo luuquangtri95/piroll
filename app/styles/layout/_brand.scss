@@ -1,7 +1,7 @@
 .brand {
   &__list {
     padding: 7rem 4rem;
-
+    margin-left: -15rem;
     @include flexboxUpdate(
       (
         align-items: center,
