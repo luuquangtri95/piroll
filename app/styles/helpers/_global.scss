@@ -8,6 +8,7 @@
   padding: 0 15px;
   margin: 0 auto;
 }
+// hamburger
 .hamburger {
   position: relative;
   display: block;
@@ -60,6 +61,7 @@
 .hamburger.is-active .bar {
   opacity: 0;
 }
+// slick
 .slick-slide {
   img {
     margin: 0 auto;

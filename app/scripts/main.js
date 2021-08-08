@@ -1,18 +1,10 @@
 // Slick slider
 $(document).ready(function () {
   $('.quote__inner').slick({
-    prevArrow:
-      "<button type='button' class='slick-prev pull-left'><i class='fal fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:
-      "<button type='button' class='slick-next pull-right'><i class='fal fa-angle-right' aria-hidden='true'></i></button>",
+    prevArrow: false,
+    nextArrow: false,
+    dots: true,
     responsive: [
-      {
-        breakpoint: 1920,
-        settings: {
-          arrows: false,
-          dots: true,
-        },
-      },
       {
         breakpoint: 767,
         settings: {
@@ -25,18 +17,10 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $('.brand__list').slick({
-    prevArrow:
-      "<button type='button' class='slick-prev pull-left'><i class='fal fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:
-      "<button type='button' class='slick-next pull-right'><i class='fal fa-angle-right' aria-hidden='true'></i></button>",
+    prevArrow: false,
+    nextArrow: false,
+    slidesToShow: 5,
     responsive: [
-      {
-        breakpoint: 1920,
-        settings: {
-          slidesToShow: 5,
-          arrows: false,
-        },
-      },
       {
         breakpoint: 1024,
         settings: {
