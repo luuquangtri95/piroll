@@ -198,3 +198,44 @@ $font-size: (
     font-size: $value;
   }
 }
+
+// font weight
+$font-weight: (
+  'fw-bold': bold,
+  'fw-600': 600,
+  'fw-500': 500,
+  'fw-400': 400,
+  'fw-300': 300,
+);
+@each $name, $value in $font-weight {
+  .#{$name} {
+    font-weight: $value;
+  }
+}
+
+// text-align
+$text-align: (
+  'text-start': left,
+  'text-end': right,
+  'text-center': center,
+);
+@each $name, $value in $text-align {
+  .#{$name} {
+    text-align: $value;
+  }
+}
+
+//text-tranform
+$text-transform: (
+  'text-decoration-none': none,
+  'text-decoration-underline': underline,
+  'text-decoration-line-through': line-through,
+  'text-lowercase': lowercase,
+  'text-uppercase': uppercase,
+  'text-capitalize': capitalize,
+);
+@each $name, $value in $text-transform {
+  .#{$name} {
+    text-transform: $value;
+  }
+}

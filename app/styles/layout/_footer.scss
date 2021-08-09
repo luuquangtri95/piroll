@@ -29,7 +29,7 @@
         display: block;
         font-size: 1.6rem;
       }
-      &-mail{
+      &-mail {
         margin-bottom: 1rem;
       }
     }
@@ -46,6 +46,11 @@
         }
         &-link {
           font-size: 1.5rem;
+          cursor: pointer;
+          color: white;
+          &:hover {
+            color: $hover;
+          }
         }
         &:first-child {
           margin-left: 14.5rem;
@@ -59,7 +64,7 @@
       }
     }
   }
-  @include maxWidth(1023px){
+  @include maxWidth(1023px) {
     &__inner {
       padding: 5rem 0;
       flex-direction: column;
@@ -77,8 +82,8 @@
         );
       }
     }
-    &__item{
-      &-design{
+    &__item {
+      &-design {
         margin-bottom: 1rem;
       }
     }
@@ -112,8 +117,8 @@
         );
       }
     }
-    &__item{
-      &-design{
+    &__item {
+      &-design {
         margin-bottom: 1rem;
       }
     }
